@@ -10,11 +10,15 @@ description = "Leonardo Rodriguez"
         <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
+
+
+        <link href="{{ [
+                    'assets/vendor/bootstrap/bootstrap.min.css',
+                    'assets/vendor/fontawesome/all.min.css',
+                    'assets/css/app.css'
+        ]|theme }}" rel="stylesheet">
+
         <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">
-        <link href="{{ 'assets/vendor/bootstrap/bootstrap.min.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/vendor/fontawesome/all.min.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/css/app.css'|theme }}" rel="stylesheet">
-        {% styles %}
     </head>
     <body class="container">
 
@@ -34,9 +38,10 @@ description = "Leonardo Rodriguez"
         </footer>
 
         <!-- Scripts -->
-        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-        <script src="{{ 'assets/vendor/bootstrap/bootstrap.min.js'|theme }}"></script>
-        <script src="{{ 'assets/js/app.js'|theme }}"></script>
-
+        <script src="{{[
+            'assets/vendor/jquery.js',
+            'assets/vendor/bootstrap/bootstrap.min.js',
+            'assets/js/app.js'
+        ]|theme }}"></script>
     </body>
 </html>
