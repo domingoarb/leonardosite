@@ -1,0 +1,15 @@
+title = "Contacto"
+url = "/contacto"
+layout = "default"
+is_hidden = 0
+[JanVince\SmallContactForm\Components\SmallContactForm contactForm]
+==
+
+
+<h3 class="text-center">CONTACTO</h3>
+<div class="container row">
+	<div class="col-md-6">{% content "contacto.htm" %}</div>
+	<div class="col-md-6">{% component 'contactForm' %}</div>
+</div>
+
+

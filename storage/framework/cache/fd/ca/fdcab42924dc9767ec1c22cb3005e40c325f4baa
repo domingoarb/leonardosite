@@ -1,0 +1,123 @@
+1560041343a:1:{s:13:"servicios.htm";a:9:{s:8:"fileName";s:13:"servicios.htm";s:7:"content";s:2961:"title = "Servicios"
+url = "/servicios"
+layout = "default"
+is_hidden = 0
+==
+
+<h3 class="text-center">SERVICIOS</h3>
+
+<div class="card-group">
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/microfono.svg'|theme }}">  
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">GRABACIONES LISTAS PARA USAR</h5>
+      <p class="card-text">Del guion a su correo electrónico, un audio listo para su uso brindando un nuevo nivel de calidad y profesionalismo al mundo en línea del voice over.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/reloj.svg'|theme }}">  
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">TAN RÁPIDO COMO LO NECESITE</h5>
+      <p class="card-text">Una vez recibido el sript haré lo posible para retornarle su audio en el menor tiempo posible. Intento superar mi marca de respuesta de tan solo una hora.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/edicion_audio.svg'|theme }}">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">EDICION DE VIDEO</h5>
+      <p class="card-text">Tambien puedo ofrecerle edición de sus videos, subtitulados, diseño gráfico, creación de imagen corporativa, diseños web y más.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/edicion_video.svg'|theme }}">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">EDICION DE AUDIO</h5>
+      <p class="card-text">Le ofrezco un servicio completo de edición de audio,  musicalización,  efectos y más . Su pieza puede quedar completamente vestida para debutar en los medios.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_tv_guayana.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_storytel.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_cisco_webex.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/office_365.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_ingram.svg'|theme }}"></div>  
+</div>
+
+<div class="row text-center">
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_ie.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_union_radio.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_capital_99_9.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_dinamica_95.5.svg'|theme }}"></div>  
+</div>
+
+";s:5:"mtime";i:1560027351;s:6:"markup";s:2883:"<h3 class="text-center">SERVICIOS</h3>
+
+<div class="card-group">
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/microfono.svg'|theme }}">  
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">GRABACIONES LISTAS PARA USAR</h5>
+      <p class="card-text">Del guion a su correo electrónico, un audio listo para su uso brindando un nuevo nivel de calidad y profesionalismo al mundo en línea del voice over.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/reloj.svg'|theme }}">  
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">TAN RÁPIDO COMO LO NECESITE</h5>
+      <p class="card-text">Una vez recibido el sript haré lo posible para retornarle su audio en el menor tiempo posible. Intento superar mi marca de respuesta de tan solo una hora.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/edicion_audio.svg'|theme }}">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">EDICION DE VIDEO</h5>
+      <p class="card-text">Tambien puedo ofrecerle edición de sus videos, subtitulados, diseño gráfico, creación de imagen corporativa, diseños web y más.</p>
+    </div>
+  </div>
+
+  <div class="card border-0">
+    <div class="text-center">
+      <img class="img_servicio" src="{{ 'assets/images/edicion_video.svg'|theme }}">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">EDICION DE AUDIO</h5>
+      <p class="card-text">Le ofrezco un servicio completo de edición de audio,  musicalización,  efectos y más . Su pieza puede quedar completamente vestida para debutar en los medios.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_tv_guayana.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_storytel.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_cisco_webex.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/office_365.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_ingram.svg'|theme }}"></div>  
+</div>
+
+<div class="row text-center">
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_ie.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_union_radio.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_capital_99_9.svg'|theme }}"></div>  
+  <div class="col"> <img class="img_servicio" src="{{ 'assets/images/logo_dinamica_95.5.svg'|theme }}"></div>  
+</div>";s:4:"code";N;s:5:"title";s:9:"Servicios";s:3:"url";s:10:"/servicios";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

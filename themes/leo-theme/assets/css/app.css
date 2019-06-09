@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Verlag Book";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Verlag Book"), url("../fonts/Verlag-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Verlag Condensed Book";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Verlag Condensed Book"), url("../fonts/Verlag-Condensed-Book.otf") format("woff");
+}
+
+h1, h2, h3, h4, label{
+  color:#cb6135;
+}
+
+h5{
+  color:#666a6b;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.parrafo_portada{
+	background-color: black;
+	color:white;
+  font-family: "Verlag Condensed Book";
+	padding: 15px 15px 15px;
+	margin:0;
+  position: relative;
+}
+
+
+.principal{
+	padding: 50px 50px 50px;
+}
+
+.img_servicio{
+  padding-top: 10px;
+  max-width: 50%;
+  width: 50%;
+  height: 80px;		
+}
+
+.menu-list{
+  border: 1px solid black;
+  padding-left: 55%;    
+}
+
+.menu-logo{
+  width: 250px;
+  height: 100px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu_leo{
+  width: 60%;
+  float: right;
+  background-color: #cb6135;
+  border-color: #cb6135;
+  height: 80px;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-nav > li > a{
+  font-family: "Verlag Book";
+  font-weight: 900; 
+}
+
+p, h4{
+ font-family: "Verlag Book"; 
+}
+
+.portada{
+  width: 100%;
+  height: 400px;
+  background-image: url('../images/portada.jpg');
+  background-size: 100% 100%;
+}
+
+.demo{
+  width: 100%;
+  height: 400px;
+  background-image: url('../images/demo.jpg');
+  background-size: 100% 100%;
+  float: right;
+}
+
+.portada-text{
+  margin: 10px 0px 30px 0px;  
+  padding-left: 52%;
+  padding-right: 1%;
+  display: inline-block;
+  font-family: 'Verlag Condensed Book';
+  font-size: 0.8em;
+  text-align: justify;
+  color: white;
+}
+
+.btn-contacto{
+  color:#cb6135;
+}

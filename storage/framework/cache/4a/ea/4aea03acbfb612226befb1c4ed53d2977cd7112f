@@ -1,0 +1,81 @@
+1560041343a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1533:"description = "Leonardo Rodriguez"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">
+        <link href="{{ 'assets/vendor/bootstrap/bootstrap.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/vendor/fontawesome/all.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/app.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body class="container">
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+
+    </body>
+</html>";s:5:"mtime";i:1560025147;s:6:"markup";s:1493:"<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">
+        <link href="{{ 'assets/vendor/bootstrap/bootstrap.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/vendor/fontawesome/all.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/app.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body class="container">
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+
+    </body>
+</html>";s:4:"code";N;s:11:"description";s:18:"Leonardo Rodriguez";}}
