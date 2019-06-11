@@ -1,60 +1,157 @@
-1560041343a:1:{s:9:"demos.htm";a:9:{s:8:"fileName";s:9:"demos.htm";s:7:"content";s:1159:"title = "Demos"
+1560293406a:1:{s:9:"demos.htm";a:9:{s:8:"fileName";s:9:"demos.htm";s:7:"content";s:3170:"title = "Demos"
 url = "/demos"
 layout = "default"
 is_hidden = 0
 ==
-<h4 class="text-center">DEMOS</h4>
-
-<div class="container d-line row">
+<h3 class="text-center">DEMOS</h3>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <div class="container d-line row">
 	<div class="d-inline float-left col-md-6">
-		<dl>
-			<dt>Locución publicitaria</dt>
-  			<dd><audio controls><source src="{{'assets/audios/demo2vo.mp3'|theme}}" type="audio/mp3" /></audio></dd>
+		<section class="audio-player card border-0">
+		  <div class="card md-w-75 sm-w-25">
+		    <div class="card-body">
+		      <div class="row align-items-center mt-4 mb-3 mx-0">
 
-  			<dt>E-learnings</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <i  id="play-button" class="material-icons play-pause btn-contacto mr-2" aria-hidden="true">play_circle_outline</i>
 
-		  	<dt>Radio Imaging</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
-		</dl>
+			    <i id="pause-button" class="material-icons play-pause d-none btn-contacto mr-2" 
+			    	aria-hidden="true">pause_circle_outline
+			    </i>
 
-		<dl>
-			<dt>Audio libros</dt>
-  			<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <i id="next-button" class="material-icons btn-contacto ml-2 mr-3" aria-hidden="true">skip_next</i>
 
-  			<dt>IVR</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <div class="col ml-auto rounded-circle border p-1">
+		          <img id="thumbnail" class="img-fluid rounded-circle" src="http://lorempixel.com/150/150/abstract/1" alt="">
+		        </div>
+		      </div>
+		      <div class="p-0 m-0" id="now-playing">
+		        <p class="font-italic mb-0">Now Playing: </p>
+		        <p class="lead" id="title"></p>
+		      </div>
+		      <div class="progress-bar progress col-12 mb-3">
+		      </div>
+		    </div>
 
-		  	<dt>Narración corporativa, micros y videos institucionales</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
-		</dl>
+		    <ul class="playlist list-group list-group-flush">
+
+		    	<li audio_url='{{"assets/audios/demo2vo.mp3"|theme}}'
+		      		img_url='{{"http://lorempixel.com/150/150/abstract/2"|theme}}'
+		      		class="active list-group-item playlist-item">
+			      		<img src='{{"assets/images/p.png"|theme}}' with='20px'>ublicidad
+		      	</li>
+
+		      	<li audio_url='{{"assets/audios/vodemolibro.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/3">
+		      		<img src='{{"assets/images/e.png"|theme}}' with='150px'>-learnings
+		  		</li>
+
+
+			    <li audio_url='{{"assets/audios/vo_reel_archive_voice.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/4">
+		  			<img src='{{"assets/images/r.png"|theme}}' with='150px'>adio Imaging
+		  		</li>
+
+			    <li audio_url='{{"assets/audios/demo_suave_vo.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/5">
+		  			<img src='{{"assets/images/a.png"|theme}}' with='30px'>udio libros
+		  		</li>
+
+		  		<li audio_url='{{"assets/audios/vodemo2.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/6">
+		  			<img src='{{"assets/images/i.png"|theme}}'>VR
+		  		</li>
+
+				<li audio_url='{{"assets/audios/demo2vo.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/7">
+		  			<img src='{{"assets/images/n.png"|theme}}'>arración corporativa, micros y videos institucionales
+		  		</li>
+
+		    </ul>
+		  </div>
+		  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+		</section>
 	</div>
 	<div class="d-inline demo float-right col-md-6"></div>
-</div>";s:5:"mtime";i:1560032858;s:6:"markup";s:1092:"<h4 class="text-center">DEMOS</h4>
+</div> 
 
-<div class="container d-line row">
+
+";s:5:"mtime";i:1560292802;s:6:"markup";s:3099:"<h3 class="text-center">DEMOS</h3>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <div class="container d-line row">
 	<div class="d-inline float-left col-md-6">
-		<dl>
-			<dt>Locución publicitaria</dt>
-  			<dd><audio controls><source src="{{'assets/audios/demo2vo.mp3'|theme}}" type="audio/mp3" /></audio></dd>
+		<section class="audio-player card border-0">
+		  <div class="card md-w-75 sm-w-25">
+		    <div class="card-body">
+		      <div class="row align-items-center mt-4 mb-3 mx-0">
 
-  			<dt>E-learnings</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <i  id="play-button" class="material-icons play-pause btn-contacto mr-2" aria-hidden="true">play_circle_outline</i>
 
-		  	<dt>Radio Imaging</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
-		</dl>
+			    <i id="pause-button" class="material-icons play-pause d-none btn-contacto mr-2" 
+			    	aria-hidden="true">pause_circle_outline
+			    </i>
 
-		<dl>
-			<dt>Audio libros</dt>
-  			<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <i id="next-button" class="material-icons btn-contacto ml-2 mr-3" aria-hidden="true">skip_next</i>
 
-  			<dt>IVR</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
+		        <div class="col ml-auto rounded-circle border p-1">
+		          <img id="thumbnail" class="img-fluid rounded-circle" src="http://lorempixel.com/150/150/abstract/1" alt="">
+		        </div>
+		      </div>
+		      <div class="p-0 m-0" id="now-playing">
+		        <p class="font-italic mb-0">Now Playing: </p>
+		        <p class="lead" id="title"></p>
+		      </div>
+		      <div class="progress-bar progress col-12 mb-3">
+		      </div>
+		    </div>
 
-		  	<dt>Narración corporativa, micros y videos institucionales</dt>
-		  	<dd><audio controls><source src="{{ 'assets/audios/demo2vo.mp3'|theme }}" type="audio/mp3" /></audio></dd>
-		</dl>
+		    <ul class="playlist list-group list-group-flush">
+
+		    	<li audio_url='{{"assets/audios/demo2vo.mp3"|theme}}'
+		      		img_url='{{"http://lorempixel.com/150/150/abstract/2"|theme}}'
+		      		class="active list-group-item playlist-item">
+			      		<img src='{{"assets/images/p.png"|theme}}' with='20px'>ublicidad
+		      	</li>
+
+		      	<li audio_url='{{"assets/audios/vodemolibro.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/3">
+		      		<img src='{{"assets/images/e.png"|theme}}' with='150px'>-learnings
+		  		</li>
+
+
+			    <li audio_url='{{"assets/audios/vo_reel_archive_voice.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/4">
+		  			<img src='{{"assets/images/r.png"|theme}}' with='150px'>adio Imaging
+		  		</li>
+
+			    <li audio_url='{{"assets/audios/demo_suave_vo.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/5">
+		  			<img src='{{"assets/images/a.png"|theme}}' with='30px'>udio libros
+		  		</li>
+
+		  		<li audio_url='{{"assets/audios/vodemo2.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/6">
+		  			<img src='{{"assets/images/i.png"|theme}}'>VR
+		  		</li>
+
+				<li audio_url='{{"assets/audios/demo2vo.mp3"|theme}}'
+		      		class="list-group-item playlist-item" 
+		      		img_url="http://lorempixel.com/150/150/abstract/7">
+		  			<img src='{{"assets/images/n.png"|theme}}'>arración corporativa, micros y videos institucionales
+		  		</li>
+
+		    </ul>
+		  </div>
+		  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+		</section>
 	</div>
 	<div class="d-inline demo float-right col-md-6"></div>
 </div>";s:4:"code";N;s:5:"title";s:5:"Demos";s:3:"url";s:6:"/demos";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

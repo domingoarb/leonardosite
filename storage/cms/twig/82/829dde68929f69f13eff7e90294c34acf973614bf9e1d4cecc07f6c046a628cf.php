@@ -32,16 +32,29 @@ class __TwigTemplate_539c310ffe0dfa0852cc8e7d2a9c03f16dba1c5567a52590d49ff4b7f51
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<div id=\"footer\">
-    <div class=\"container\">
-        <hr />
-        <p class=\"muted credit text-center\">
-        &copy; Derechos reservados Leonardo Rodriguez &trade;";
-        // line 5
+        echo "<footer id=\"sticky-footer\" class=\"py-2 bg-dark gris text-center\">
+\t<div class=\"container text-center d-inline\">
+      <small> &copy; Derechos reservados Leonardo Rodríguez &trade;";
+        // line 3
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
-        echo "</p>
+        echo "</small>
     </div>
-</div>";
+
+\t<div class=\"navbar d-inline gris\">
+\t\t<a href=\"https://wa.me/584249408911?text\" target=\"_blank\">
+\t\t\t<i class=\"fab fa-whatsapp fa-2x\"></i>
+\t\t</a>
+  \t\t<a href=\"https://www.youtube.com/MrLeodejro\" target=\"_blank\">
+  \t\t\t<i class=\"fab fa-youtube fa-2x\"></i>
+  \t\t</a>
+  \t\t<a href=\"https://www.instagram.com/leonardovoiceover\" target=\"_blank\">
+  \t\t\t<i class=\"fab fa-instagram fa-2x\"></i>
+  \t\t</a>
+\t\t<a href=\"https://soundcloud.com/vozleonardo\" target=\"_blank\">
+\t\t\t<i class=\"fab fa-soundcloud fa-2x\"></i>
+\t\t</a>
+\t</div>
+</footer>";
     }
 
     public function getTemplateName()
@@ -56,17 +69,30 @@ class __TwigTemplate_539c310ffe0dfa0852cc8e7d2a9c03f16dba1c5567a52590d49ff4b7f51
 
     public function getDebugInfo()
     {
-        return array (  41 => 5,  35 => 1,);
+        return array (  39 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"footer\">
-    <div class=\"container\">
-        <hr />
-        <p class=\"muted credit text-center\">
-        &copy; Derechos reservados Leonardo Rodriguez &trade;{{ \"now\"|date(\"Y\") }}</p>
+        return new Source("<footer id=\"sticky-footer\" class=\"py-2 bg-dark gris text-center\">
+\t<div class=\"container text-center d-inline\">
+      <small> &copy; Derechos reservados Leonardo Rodríguez &trade;{{ \"now\"|date(\"Y\") }}</small>
     </div>
-</div>", "/home/mime/web/octosite/themes/leo-theme/partials/site/footer.htm", "");
+
+\t<div class=\"navbar d-inline gris\">
+\t\t<a href=\"https://wa.me/584249408911?text\" target=\"_blank\">
+\t\t\t<i class=\"fab fa-whatsapp fa-2x\"></i>
+\t\t</a>
+  \t\t<a href=\"https://www.youtube.com/MrLeodejro\" target=\"_blank\">
+  \t\t\t<i class=\"fab fa-youtube fa-2x\"></i>
+  \t\t</a>
+  \t\t<a href=\"https://www.instagram.com/leonardovoiceover\" target=\"_blank\">
+  \t\t\t<i class=\"fab fa-instagram fa-2x\"></i>
+  \t\t</a>
+\t\t<a href=\"https://soundcloud.com/vozleonardo\" target=\"_blank\">
+\t\t\t<i class=\"fab fa-soundcloud fa-2x\"></i>
+\t\t</a>
+\t</div>
+</footer>", "/home/mime/web/octosite/themes/leo-theme/partials/site/footer.htm", "");
     }
 }

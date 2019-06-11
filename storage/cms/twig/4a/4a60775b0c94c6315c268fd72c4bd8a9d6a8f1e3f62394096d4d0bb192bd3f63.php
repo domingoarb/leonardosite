@@ -51,72 +51,54 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 11
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.ico");
-        echo "\">
-        <link href=\"";
-        // line 12
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap/bootstrap.min.css");
-        echo "\" rel=\"stylesheet\">
+
+
         <link href=\"";
         // line 13
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/fontawesome/all.min.css");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/vendor/bootstrap/bootstrap.min.css", 1 => "assets/vendor/fontawesome/all.min.css", 2 => "assets/css/app.css", 3 => "assets/vendor/audio/audio-player.css", 4 => "assets/css/jquery-ui.css"]);
+        // line 20
         echo "\" rel=\"stylesheet\">
-        <link href=\"";
-        // line 14
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/app.css");
-        echo "\" rel=\"stylesheet\">
-        ";
-        // line 15
-        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
-        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 16
-        echo "    </head>
-    <body class=\"container\">
-
-        <!-- Header -->
-        <header id=\"layout-header\">
-            ";
+        <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 21
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon16x16.ico");
+        echo "\">
+    </head>
+    <body class=\"d-flex flex-column\">
+        <!-- Header -->
+            <header id=\"layout-header pb-4\">
+                ";
+        // line 26
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 22
-        echo "        </header>
-
-        <!-- Content -->
-        <section id=\"layout-content\">
-            ";
-        // line 26
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 27
-        echo "        </section>
+        echo "            </header>
 
+            <div id=\"page-content\">
+                <div class=\"container text-center justify-content-center\">
+                        <!-- Content -->
+                        <section id=\"layout-content\">";
+        // line 32
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        echo "</section>
+                </div>
+            </div>
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 31
+        // line 37
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 32
+        // line 38
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 35
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
+        // line 41
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/vendor/jquery.js", 1 => "assets/vendor/bootstrap/bootstrap.min.js", 2 => "assets/vendor/audio/audioPlayer.js", 3 => "assets/vendor/audio/jquery-ui-slider.js", 4 => "assets/js/app.js"]);
+        // line 47
         echo "\"></script>
-        <script src=\"";
-        // line 36
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap/bootstrap.min.js");
-        echo "\"></script>
-        <script src=\"";
-        // line 37
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/app.js");
-        echo "\"></script>
-
     </body>
 </html>";
     }
@@ -133,7 +115,7 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
 
     public function getDebugInfo()
     {
-        return array (  117 => 37,  113 => 36,  109 => 35,  104 => 32,  100 => 31,  94 => 27,  92 => 26,  86 => 22,  82 => 21,  75 => 16,  72 => 15,  68 => 14,  64 => 13,  60 => 12,  56 => 11,  49 => 7,  45 => 6,  41 => 5,  35 => 1,);
+        return array (  101 => 47,  99 => 41,  94 => 38,  90 => 37,  82 => 32,  75 => 27,  71 => 26,  63 => 21,  60 => 20,  58 => 13,  49 => 7,  45 => 6,  41 => 5,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -148,34 +130,43 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/favicon.ico'|theme }}\">
-        <link href=\"{{ 'assets/vendor/bootstrap/bootstrap.min.css'|theme }}\" rel=\"stylesheet\">
-        <link href=\"{{ 'assets/vendor/fontawesome/all.min.css'|theme }}\" rel=\"stylesheet\">
-        <link href=\"{{ 'assets/css/app.css'|theme }}\" rel=\"stylesheet\">
-        {% styles %}
+
+
+        <link href=\"{{ [
+                    'assets/vendor/bootstrap/bootstrap.min.css',
+                    'assets/vendor/fontawesome/all.min.css',
+                    'assets/css/app.css',
+                    'assets/vendor/audio/audio-player.css',
+                    'assets/css/jquery-ui.css',
+                    
+        ]|theme }}\" rel=\"stylesheet\">
+        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/favicon16x16.ico'|theme }}\">
     </head>
-    <body class=\"container\">
-
+    <body class=\"d-flex flex-column\">
         <!-- Header -->
-        <header id=\"layout-header\">
-            {% partial 'site/header' %}
-        </header>
+            <header id=\"layout-header pb-4\">
+                {% partial 'site/header' %}
+            </header>
 
-        <!-- Content -->
-        <section id=\"layout-content\">
-            {% page %}
-        </section>
-
+            <div id=\"page-content\">
+                <div class=\"container text-center justify-content-center\">
+                        <!-- Content -->
+                        <section id=\"layout-content\">{% page %}</section>
+                </div>
+            </div>
         <!-- Footer -->
         <footer id=\"layout-footer\">
             {% partial 'site/footer' %}
         </footer>
 
         <!-- Scripts -->
-        <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/vendor/bootstrap/bootstrap.min.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/js/app.js'|theme }}\"></script>
-
+        <script src=\"{{[
+            'assets/vendor/jquery.js',
+            'assets/vendor/bootstrap/bootstrap.min.js',
+            'assets/vendor/audio/audioPlayer.js',
+            'assets/vendor/audio/jquery-ui-slider.js',
+            'assets/js/app.js'
+        ]|theme }}\"></script>
     </body>
 </html>", "/home/mime/web/octosite/themes/leo-theme/layouts/default.htm", "");
     }

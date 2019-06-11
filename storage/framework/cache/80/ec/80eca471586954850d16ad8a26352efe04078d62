@@ -1,14 +1,39 @@
-1560041343a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:211:"<div id="footer">
-    <div class="container">
-        <hr />
-        <p class="muted credit text-center">
-        &copy; Derechos reservados Leonardo Rodriguez &trade;{{ "now"|date("Y") }}</p>
+1560292866a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:743:"<footer id="sticky-footer" class="py-2 bg-dark gris text-center">
+	<div class="container text-center d-inline">
+      <small> &copy; Derechos reservados Leonardo Rodríguez &trade;{{ "now"|date("Y") }}</small>
     </div>
-</div>
-";s:5:"mtime";i:1560029604;s:6:"markup";s:210:"<div id="footer">
-    <div class="container">
-        <hr />
-        <p class="muted credit text-center">
-        &copy; Derechos reservados Leonardo Rodriguez &trade;{{ "now"|date("Y") }}</p>
+
+	<div class="navbar d-inline gris">
+		<a href="https://wa.me/584249408911?text" target="_blank">
+			<i class="fab fa-whatsapp fa-2x"></i>
+		</a>
+  		<a href="https://www.youtube.com/MrLeodejro" target="_blank">
+  			<i class="fab fa-youtube fa-2x"></i>
+  		</a>
+  		<a href="https://www.instagram.com/leonardovoiceover" target="_blank">
+  			<i class="fab fa-instagram fa-2x"></i>
+  		</a>
+		<a href="https://soundcloud.com/vozleonardo" target="_blank">
+			<i class="fab fa-soundcloud fa-2x"></i>
+		</a>
+	</div>
+</footer>";s:5:"mtime";i:1560267464;s:6:"markup";s:743:"<footer id="sticky-footer" class="py-2 bg-dark gris text-center">
+	<div class="container text-center d-inline">
+      <small> &copy; Derechos reservados Leonardo Rodríguez &trade;{{ "now"|date("Y") }}</small>
     </div>
-</div>";s:4:"code";N;}}
+
+	<div class="navbar d-inline gris">
+		<a href="https://wa.me/584249408911?text" target="_blank">
+			<i class="fab fa-whatsapp fa-2x"></i>
+		</a>
+  		<a href="https://www.youtube.com/MrLeodejro" target="_blank">
+  			<i class="fab fa-youtube fa-2x"></i>
+  		</a>
+  		<a href="https://www.instagram.com/leonardovoiceover" target="_blank">
+  			<i class="fab fa-instagram fa-2x"></i>
+  		</a>
+		<a href="https://soundcloud.com/vozleonardo" target="_blank">
+			<i class="fab fa-soundcloud fa-2x"></i>
+		</a>
+	</div>
+</footer>";s:4:"code";N;}}

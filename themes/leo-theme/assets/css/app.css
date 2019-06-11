@@ -12,15 +12,32 @@
   src: local("Verlag Condensed Book"), url("../fonts/Verlag-Condensed-Book.otf") format("woff");
 }
 
-h1, h2, h3, h4, label{
+h1, h2, h3, label{
   color:#cb6135;
 }
 
-h5{
+h4{
   color:#666a6b;
-  font-size: 0.8em;
+  font-size: 1.1em;
   text-align: center;
+  font-family: "Verlag Book"; 
 }
+
+p{
+  text-align: justify;
+  font-family: "Verlag Book"; 
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+
 
 .parrafo_portada{
 	background-color: black;
@@ -31,26 +48,11 @@ h5{
   position: relative;
 }
 
-
-.principal{
-	padding: 50px 50px 50px;
-}
-
 .img_servicio{
   padding-top: 10px;
   max-width: 50%;
   width: 50%;
   height: 80px;		
-}
-
-.menu-list{
-  border: 1px solid black;
-  padding-left: 55%;    
-}
-
-.menu-logo{
-  width: 350px;
-  height: 130px;
 }
 
 .responsive {
@@ -59,8 +61,7 @@ h5{
 }
 
 .menu_leo{
-  width: 60%;
-  float: right;
+
   background-color: #cb6135;
   border-color: #cb6135;
   height: 80px;
@@ -76,13 +77,10 @@ h5{
   font-weight: 900; 
 }
 
-p, h4{
- font-family: "Verlag Book"; 
-}
 
 .portada{
-  width: 100%;
-  height: 400px;
+  width: 100%; 
+  height: 100%;
   background-image: url('../images/portada.jpg');
   background-size: 100% 100%;
 }
@@ -108,4 +106,84 @@ p, h4{
 
 .btn-contacto{
   color:#cb6135;
+}
+
+/* Navbar links */
+.navbar a {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.gris{
+  color: #666a6b;
+}
+
+.negro{
+  color: #0c0b0b;
+}
+
+.playlist-item > img {
+  width: 30px;
+}
+
+.playlist-item {
+  font-family: 'Verlag Condensed Book';
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.banner{
+  height: 200px;
+}
+
+.menu-logo{
+    width: 350px;
+    height: 250px;
+  } 
+
+.post-list > li{
+  text-decoration: none;
+  color: #666a6b;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+.menu-logo{
+    width: 150px;
+    height: 50px;
+  } 
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .menu-logo{
+    width: 150px;
+    height: 50px;
+  } 
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .menu-logo{
+    width: 250px;
+    height: 100px;
+  } 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .menu-logo{
+    width: 250px;
+    height: 100px;
+  } 
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+.menu-logo{
+    width: 350px;
+    height: 150px;
+  } 
 }

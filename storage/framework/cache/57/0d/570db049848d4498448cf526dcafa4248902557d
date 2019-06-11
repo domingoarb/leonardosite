@@ -1,7 +1,22 @@
-1560041343a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:244:"title = "Leonardo Rodriguez Voice Over" 
-url = "/" 
-layout = "default" 
-is_hidden = 0 
+1560292866a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1526:"title = "Leonardo Rodriguez Voice Over"
+url = "/"
+layout = "default"
+description = "Locutor profesional, voice over talent on line. Locucion, narración publicitaria para radio y tv, 
+      videos corporativos, locucion videos industriales, narración de documentales, IVR, 
+      locucion de promociones para radio, locucion de trailers cinematograficos, 
+      locución para promociones de televisión, locución para estaciones de radio on line, 
+      locución y narracion de audio libros, audio books, locución de e learnings, 
+      locución de cursos, locución de manuales, narraciones, narración de cuentos, 
+      locución de centrales telefónicas, locución de centralitas\""
+meta_title = "Voice Over"
+meta_description = "Locutor profesional, voice over talent on line. Locucion, narración publicitaria para radio y tv, 
+      videos corporativos, locucion videos industriales, narración de documentales, IVR, 
+      locucion de promociones para radio, locucion de trailers cinematograficos, 
+      locución para promociones de televisión, locución para estaciones de radio on line, 
+      locución y narracion de audio libros, audio books, locución de e learnings, 
+      locución de cursos, locución de manuales, narraciones, narración de cuentos, 
+      locución de centrales telefónicas, locución de centralitas\""
+is_hidden = 0
 ==
 <div class="container">
 	<div class="portada">
@@ -9,11 +24,22 @@ is_hidden = 0
 			{% content "mensaje_bienvenida.htm" %}
 		</div>
 	</div>
-</div>
-";s:5:"mtime";i:1560029313;s:6:"markup";s:147:"<div class="container">
+</div>";s:5:"mtime";i:1560289574;s:6:"markup";s:147:"<div class="container">
 	<div class="portada">
 		<div class="portada-text">
 			{% content "mensaje_bienvenida.htm" %}
 		</div>
 	</div>
-</div>";s:4:"code";N;s:5:"title";s:29:"Leonardo Rodriguez Voice Over";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</div>";s:4:"code";N;s:5:"title";s:29:"Leonardo Rodriguez Voice Over";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:607:"Locutor profesional, voice over talent on line. Locucion, narración publicitaria para radio y tv, 
+      videos corporativos, locucion videos industriales, narración de documentales, IVR, 
+      locucion de promociones para radio, locucion de trailers cinematograficos, 
+      locución para promociones de televisión, locución para estaciones de radio on line, 
+      locución y narracion de audio libros, audio books, locución de e learnings, 
+      locución de cursos, locución de manuales, narraciones, narración de cuentos, 
+      locución de centrales telefónicas, locución de centralitas"";s:10:"meta_title";s:10:"Voice Over";s:16:"meta_description";s:607:"Locutor profesional, voice over talent on line. Locucion, narración publicitaria para radio y tv, 
+      videos corporativos, locucion videos industriales, narración de documentales, IVR, 
+      locucion de promociones para radio, locucion de trailers cinematograficos, 
+      locución para promociones de televisión, locución para estaciones de radio on line, 
+      locución y narracion de audio libros, audio books, locución de e learnings, 
+      locución de cursos, locución de manuales, narraciones, narración de cuentos, 
+      locución de centrales telefónicas, locución de centralitas"";s:9:"is_hidden";s:1:"0";}}

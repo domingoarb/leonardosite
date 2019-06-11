@@ -33,12 +33,12 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
     {
         // line 1
         echo "<!-- Image and text -->  
-<div class=\"clearfix\">
-    <a class=\"navbar-brand\" href=\"#\">
+<div class=\"row justify-content-center\">
+    <a class=\"img-fluid d-line pr-4\" href=\"#\">
         <img src=\"";
         // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.svg");
-        echo "\" class=\"menu-logo float-left\">
+        echo "\" class=\"menu-logo\">
     </a>
     <nav class=\"navbar navbar-expand-lg navbar-light menu_leo\">
       <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -70,10 +70,17 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("contacto");
         echo "\">CONTACTO</a>
           </li>
+          <li class=\"nav-item\">
+            <a  class=\"nav-link\"  href=\"";
+        // line 25
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("asesorias");
+        echo "\">ASESORIAS</a>  
+          </li>
         </ul>
       </div>
     </nav>
-</div>";
+</div>
+<br>";
     }
 
     public function getTemplateName()
@@ -88,15 +95,15 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
 
     public function getDebugInfo()
     {
-        return array (  70 => 22,  64 => 19,  58 => 16,  52 => 13,  40 => 4,  35 => 1,);
+        return array (  76 => 25,  70 => 22,  64 => 19,  58 => 16,  52 => 13,  40 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!-- Image and text -->  
-<div class=\"clearfix\">
-    <a class=\"navbar-brand\" href=\"#\">
-        <img src=\"{{ 'assets/images/logo.svg'|theme }}\" class=\"menu-logo float-left\">
+<div class=\"row justify-content-center\">
+    <a class=\"img-fluid d-line pr-4\" href=\"#\">
+        <img src=\"{{ 'assets/images/logo.svg'|theme }}\" class=\"menu-logo\">
     </a>
     <nav class=\"navbar navbar-expand-lg navbar-light menu_leo\">
       <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -116,9 +123,13 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
           <li class=\"nav-item\">
             <a  class=\"nav-link\"  href=\"{{ 'contacto' | page }}\">CONTACTO</a>
           </li>
+          <li class=\"nav-item\">
+            <a  class=\"nav-link\"  href=\"{{ 'asesorias' | page }}\">ASESORIAS</a>  
+          </li>
         </ul>
       </div>
     </nav>
-</div>", "/home/mime/web/octosite/themes/leo-theme/partials/site/header.htm", "");
+</div>
+<br>", "/home/mime/web/octosite/themes/leo-theme/partials/site/header.htm", "");
     }
 }

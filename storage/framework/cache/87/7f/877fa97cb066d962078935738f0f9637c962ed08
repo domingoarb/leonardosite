@@ -1,7 +1,7 @@
-1560041343a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1174:"<!-- Image and text -->  
-<div class="clearfix">
-    <a class="navbar-brand" href="#">
-        <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo float-left">
+1560292866a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1324:"<!-- Image and text -->  
+<div class="row justify-content-center">
+    <a class="img-fluid d-line pr-4" href="#">
+        <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo">
     </a>
     <nav class="navbar navbar-expand-lg navbar-light menu_leo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,16 +20,19 @@
           </li>
           <li class="nav-item">
             <a  class="nav-link"  href="{{ 'contacto' | page }}">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link"  href="{{ 'asesorias' | page }}">ASESORIAS</a>  
           </li>
         </ul>
       </div>
     </nav>
 </div>
-
-";s:5:"mtime";i:1560027656;s:6:"markup";s:1172:"<!-- Image and text -->  
-<div class="clearfix">
-    <a class="navbar-brand" href="#">
-        <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo float-left">
+<br>
+";s:5:"mtime";i:1560284470;s:6:"markup";s:1323:"<!-- Image and text -->  
+<div class="row justify-content-center">
+    <a class="img-fluid d-line pr-4" href="#">
+        <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo">
     </a>
     <nav class="navbar navbar-expand-lg navbar-light menu_leo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +52,11 @@
           <li class="nav-item">
             <a  class="nav-link"  href="{{ 'contacto' | page }}">CONTACTO</a>
           </li>
+          <li class="nav-item">
+            <a  class="nav-link"  href="{{ 'asesorias' | page }}">ASESORIAS</a>  
+          </li>
         </ul>
       </div>
     </nav>
-</div>";s:4:"code";N;}}
+</div>
+<br>";s:4:"code";N;}}

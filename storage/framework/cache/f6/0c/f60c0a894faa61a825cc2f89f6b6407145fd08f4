@@ -1,20 +1,25 @@
-1560041343a:1:{s:12:"contacto.htm";a:10:{s:8:"fileName";s:12:"contacto.htm";s:7:"content";s:335:"title = "Contacto"
+1560292866a:1:{s:12:"contacto.htm";a:10:{s:8:"fileName";s:12:"contacto.htm";s:7:"content";s:427:"title = "Contacto"
 url = "/contacto"
 layout = "default"
 is_hidden = 0
 [JanVince\SmallContactForm\Components\SmallContactForm contactForm]
 ==
 
-
-<h3 class="text-center">CONTACTO</h3>
 <div class="container row">
-	<div class="col-md-6">{% content "contacto.htm" %}</div>
-	<div class="col-md-6">{% component 'contactForm' %}</div>
+	<div class="col-md-6 pr-5" >{% content "contacto.htm" %}
+		<div class="text-center">
+			<img src="{{ 'assets/images/codigo_qr.png'|theme }}" class="w-25">	
+		</div>
+	</div>
+	<div class="col-md-6 text-left pl-5">{% component 'contactForm' %}</div>
 </div>
 
 
-";s:5:"mtime";i:1560027503;s:6:"markup";s:189:"<h3 class="text-center">CONTACTO</h3>
-<div class="container row">
-	<div class="col-md-6">{% content "contacto.htm" %}</div>
-	<div class="col-md-6">{% component 'contactForm' %}</div>
+";s:5:"mtime";i:1560282740;s:6:"markup";s:282:"<div class="container row">
+	<div class="col-md-6 pr-5" >{% content "contacto.htm" %}
+		<div class="text-center">
+			<img src="{{ 'assets/images/codigo_qr.png'|theme }}" class="w-25">	
+		</div>
+	</div>
+	<div class="col-md-6 text-left pl-5">{% component 'contactForm' %}</div>
 </div>";s:4:"code";N;s:5:"title";s:8:"Contacto";s:3:"url";s:9:"/contacto";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:65:"JanVince\SmallContactForm\Components\SmallContactForm contactForm";a:0:{}}}

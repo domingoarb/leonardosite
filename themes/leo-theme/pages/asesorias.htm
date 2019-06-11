@@ -1,0 +1,17 @@
+title = "Asesorias"
+url = "/asesorias"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = "asesorias-post"
+==
+
+<div class="container-fluid text-left">
+	{% component 'blogPosts' %}
+</div>

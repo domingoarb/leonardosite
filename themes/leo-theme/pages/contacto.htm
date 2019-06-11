@@ -5,11 +5,13 @@ is_hidden = 0
 [JanVince\SmallContactForm\Components\SmallContactForm contactForm]
 ==
 
-
-<h3 class="text-center">CONTACTO</h3>
 <div class="container row">
-	<div class="col-md-6">{% content "contacto.htm" %}</div>
-	<div class="col-md-6">{% component 'contactForm' %}</div>
+	<div class="col-md-6 pr-5" >{% content "contacto.htm" %}
+		<div class="text-center">
+			<img src="{{ 'assets/images/codigo_qr.png'|theme }}" class="w-25">	
+		</div>
+	</div>
+	<div class="col-md-6 text-left pl-5">{% component 'contactForm' %}</div>
 </div>
 
 
