@@ -34,7 +34,10 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
         // line 1
         echo "<!-- Image and text -->  
 <div class=\"row justify-content-center\">
-    <a class=\"img-fluid d-line pr-4\" href=\"#\">
+    <a class=\"img-fluid d-line pr-4\" href=\"";
+        // line 3
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
+        echo "\">
         <img src=\"";
         // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.svg");
@@ -95,14 +98,14 @@ class __TwigTemplate_2bf9943cd591e861c9388412ce260610a90cd3908bb0f956a1f104f3058
 
     public function getDebugInfo()
     {
-        return array (  76 => 25,  70 => 22,  64 => 19,  58 => 16,  52 => 13,  40 => 4,  35 => 1,);
+        return array (  79 => 25,  73 => 22,  67 => 19,  61 => 16,  55 => 13,  43 => 4,  39 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!-- Image and text -->  
 <div class=\"row justify-content-center\">
-    <a class=\"img-fluid d-line pr-4\" href=\"#\">
+    <a class=\"img-fluid d-line pr-4\" href=\"{{ 'home' | page }}\">
         <img src=\"{{ 'assets/images/logo.svg'|theme }}\" class=\"menu-logo\">
     </a>
     <nav class=\"navbar navbar-expand-lg navbar-light menu_leo\">

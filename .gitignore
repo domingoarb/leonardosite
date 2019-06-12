@@ -116,7 +116,7 @@ fabric.properties
 yarn.lock
 
 # October CMS
-/storage
+storage/
 /storage/*
 /config/database.php
 /storage/*.key

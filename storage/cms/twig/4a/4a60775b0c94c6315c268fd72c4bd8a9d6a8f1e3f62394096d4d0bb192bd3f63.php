@@ -65,7 +65,7 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
     </head>
     <body class=\"d-flex flex-column\">
         <!-- Header -->
-            <header id=\"layout-header pb-4\">
+            <header id=\"layout-header\" class=\"container text-center justify-content-center\">
                 ";
         // line 26
         $context['__cms_partial_params'] = [];
@@ -144,7 +144,7 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
     </head>
     <body class=\"d-flex flex-column\">
         <!-- Header -->
-            <header id=\"layout-header pb-4\">
+            <header id=\"layout-header\" class=\"container text-center justify-content-center\">
                 {% partial 'site/header' %}
             </header>
 

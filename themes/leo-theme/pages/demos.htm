@@ -4,24 +4,21 @@ layout = "default"
 is_hidden = 0
 ==
 <h3 class="text-center">DEMOS</h3>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <div class="container d-line row">
-	<div class="d-inline float-left col-md-6">
-		<section class="audio-player card border-0">
-		  <div class="card md-w-75 sm-w-25">
+	<div class="d-inline float-left col-md-4">
+		<section class="audio-player md-w-50  card border-0">
+		  <div class="card md-w-50 sm-w-25">
 		    <div class="card-body">
 		      <div class="row align-items-center mt-4 mb-3 mx-0">
+               	<i id="play-button" class="far fa-play-circle play-pause btn-contacto" aria-hidden="true"></i>
+				
+				<i id="pause-button" class="far fa-pause-circle play-pause d-none btn-contacto"></i>
 
-		        <i  id="play-button" class="material-icons play-pause btn-contacto mr-2" aria-hidden="true">play_circle_outline</i>
 
-			    <i id="pause-button" class="material-icons play-pause d-none btn-contacto mr-2" 
-			    	aria-hidden="true">pause_circle_outline
-			    </i>
+				<i id="next-button" class="fas fa-fast-forward btn-contacto ml-2" aria-hidden="true"></i>
 
-		        <i id="next-button" class="material-icons btn-contacto ml-2 mr-3" aria-hidden="true">skip_next</i>
-
-		        <div class="col ml-auto rounded-circle border p-1">
-		          <img id="thumbnail" class="img-fluid rounded-circle" src="http://lorempixel.com/150/150/abstract/1" alt="">
+		        <div class="col ml-auto rounded-circle border-0 p-1">
+		          <img id="thumbnail" class="img-fluid rounded-circle" src="http://lorempixel.com/100/100/abstract/1" alt="">
 		        </div>
 		      </div>
 		      <div class="p-0 m-0" id="now-playing">
@@ -31,9 +28,12 @@ is_hidden = 0
 		      <div class="progress-bar progress col-12 mb-3">
 		      </div>
 		    </div>
-
-		    <ul class="playlist list-group list-group-flush">
-
+		  </div>
+		  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+		</section>
+	</div>
+	<div class="col-md-3 d-inline ">
+		<ul class="playlist list-group list-group-flush">
 		    	<li audio_url='{{"assets/audios/demo2vo.mp3"|theme}}'
 		      		img_url='{{"http://lorempixel.com/150/150/abstract/2"|theme}}'
 		      		class="active list-group-item playlist-item">
@@ -70,13 +70,10 @@ is_hidden = 0
 		      		img_url="http://lorempixel.com/150/150/abstract/7">
 		  			<img src='{{"assets/images/n.png"|theme}}'>arración corporativa, micros y videos institucionales
 		  		</li>
-
 		    </ul>
-		  </div>
-		  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
-		</section>
+
 	</div>
-	<div class="d-inline demo float-right col-md-6"></div>
+	<div class="d-inline demo float-right col-md-5"></div>
 </div> 
 
 

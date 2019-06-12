@@ -12,10 +12,10 @@
 
 @media screen and (min-width:560px) {
   .audio-player i {
-    font-size: 134px;
+    font-size: 80px;
   }
   #next-button {
-    font-size: 100px;
+    font-size: 80px;
   }
 }
 
@@ -28,8 +28,8 @@
 }
 
 li.active:before {
-  font-family: "Material Icons";
-  content: "\e037";
+  font-family: "FontAwesome", sans-serif;
+  content: "\f058";
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;

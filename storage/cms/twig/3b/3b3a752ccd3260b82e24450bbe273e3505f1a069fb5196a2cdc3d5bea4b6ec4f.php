@@ -33,24 +33,21 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
     {
         // line 1
         echo "<h3 class=\"text-center\">DEMOS</h3>
-<link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
  <div class=\"container d-line row\">
-\t<div class=\"d-inline float-left col-md-6\">
-\t\t<section class=\"audio-player card border-0\">
-\t\t  <div class=\"card md-w-75 sm-w-25\">
+\t<div class=\"d-inline float-left col-md-4\">
+\t\t<section class=\"audio-player md-w-50  card border-0\">
+\t\t  <div class=\"card md-w-50 sm-w-25\">
 \t\t    <div class=\"card-body\">
 \t\t      <div class=\"row align-items-center mt-4 mb-3 mx-0\">
+               \t<i id=\"play-button\" class=\"far fa-play-circle play-pause btn-contacto\" aria-hidden=\"true\"></i>
+\t\t\t\t
+\t\t\t\t<i id=\"pause-button\" class=\"far fa-pause-circle play-pause d-none btn-contacto\"></i>
 
-\t\t        <i  id=\"play-button\" class=\"material-icons play-pause btn-contacto mr-2\" aria-hidden=\"true\">play_circle_outline</i>
 
-\t\t\t    <i id=\"pause-button\" class=\"material-icons play-pause d-none btn-contacto mr-2\" 
-\t\t\t    \taria-hidden=\"true\">pause_circle_outline
-\t\t\t    </i>
+\t\t\t\t<i id=\"next-button\" class=\"fas fa-fast-forward btn-contacto ml-2\" aria-hidden=\"true\"></i>
 
-\t\t        <i id=\"next-button\" class=\"material-icons btn-contacto ml-2 mr-3\" aria-hidden=\"true\">skip_next</i>
-
-\t\t        <div class=\"col ml-auto rounded-circle border p-1\">
-\t\t          <img id=\"thumbnail\" class=\"img-fluid rounded-circle\" src=\"http://lorempixel.com/150/150/abstract/1\" alt=\"\">
+\t\t        <div class=\"col ml-auto rounded-circle border-0 p-1\">
+\t\t          <img id=\"thumbnail\" class=\"img-fluid rounded-circle\" src=\"http://lorempixel.com/100/100/abstract/1\" alt=\"\">
 \t\t        </div>
 \t\t      </div>
 \t\t      <div class=\"p-0 m-0\" id=\"now-playing\">
@@ -60,9 +57,12 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
 \t\t      <div class=\"progress-bar progress col-12 mb-3\">
 \t\t      </div>
 \t\t    </div>
-
-\t\t    <ul class=\"playlist list-group list-group-flush\">
-
+\t\t  </div>
+\t\t  <audio id=\"audio-player\" class=\"d-none\" src=\"\" type=\"audio/mp3\" controls=\"controls\"></audio>
+\t\t</section>
+\t</div>
+\t<div class=\"col-md-3 d-inline \">
+\t\t<ul class=\"playlist list-group list-group-flush\">
 \t\t    \t<li audio_url='";
         // line 32
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/audios/demo2vo.mp3");
@@ -138,13 +138,10 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/n.png");
         echo "'>arración corporativa, micros y videos institucionales
 \t\t  \t\t</li>
-
 \t\t    </ul>
-\t\t  </div>
-\t\t  <audio id=\"audio-player\" class=\"d-none\" src=\"\" type=\"audio/mp3\" controls=\"controls\"></audio>
-\t\t</section>
+
 \t</div>
-\t<div class=\"d-inline demo float-right col-md-6\"></div>
+\t<div class=\"d-inline demo float-right col-md-5\"></div>
 </div>";
     }
 
@@ -166,24 +163,21 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
     public function getSourceContext()
     {
         return new Source("<h3 class=\"text-center\">DEMOS</h3>
-<link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
  <div class=\"container d-line row\">
-\t<div class=\"d-inline float-left col-md-6\">
-\t\t<section class=\"audio-player card border-0\">
-\t\t  <div class=\"card md-w-75 sm-w-25\">
+\t<div class=\"d-inline float-left col-md-4\">
+\t\t<section class=\"audio-player md-w-50  card border-0\">
+\t\t  <div class=\"card md-w-50 sm-w-25\">
 \t\t    <div class=\"card-body\">
 \t\t      <div class=\"row align-items-center mt-4 mb-3 mx-0\">
+               \t<i id=\"play-button\" class=\"far fa-play-circle play-pause btn-contacto\" aria-hidden=\"true\"></i>
+\t\t\t\t
+\t\t\t\t<i id=\"pause-button\" class=\"far fa-pause-circle play-pause d-none btn-contacto\"></i>
 
-\t\t        <i  id=\"play-button\" class=\"material-icons play-pause btn-contacto mr-2\" aria-hidden=\"true\">play_circle_outline</i>
 
-\t\t\t    <i id=\"pause-button\" class=\"material-icons play-pause d-none btn-contacto mr-2\" 
-\t\t\t    \taria-hidden=\"true\">pause_circle_outline
-\t\t\t    </i>
+\t\t\t\t<i id=\"next-button\" class=\"fas fa-fast-forward btn-contacto ml-2\" aria-hidden=\"true\"></i>
 
-\t\t        <i id=\"next-button\" class=\"material-icons btn-contacto ml-2 mr-3\" aria-hidden=\"true\">skip_next</i>
-
-\t\t        <div class=\"col ml-auto rounded-circle border p-1\">
-\t\t          <img id=\"thumbnail\" class=\"img-fluid rounded-circle\" src=\"http://lorempixel.com/150/150/abstract/1\" alt=\"\">
+\t\t        <div class=\"col ml-auto rounded-circle border-0 p-1\">
+\t\t          <img id=\"thumbnail\" class=\"img-fluid rounded-circle\" src=\"http://lorempixel.com/100/100/abstract/1\" alt=\"\">
 \t\t        </div>
 \t\t      </div>
 \t\t      <div class=\"p-0 m-0\" id=\"now-playing\">
@@ -193,9 +187,12 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
 \t\t      <div class=\"progress-bar progress col-12 mb-3\">
 \t\t      </div>
 \t\t    </div>
-
-\t\t    <ul class=\"playlist list-group list-group-flush\">
-
+\t\t  </div>
+\t\t  <audio id=\"audio-player\" class=\"d-none\" src=\"\" type=\"audio/mp3\" controls=\"controls\"></audio>
+\t\t</section>
+\t</div>
+\t<div class=\"col-md-3 d-inline \">
+\t\t<ul class=\"playlist list-group list-group-flush\">
 \t\t    \t<li audio_url='{{\"assets/audios/demo2vo.mp3\"|theme}}'
 \t\t      \t\timg_url='{{\"http://lorempixel.com/150/150/abstract/2\"|theme}}'
 \t\t      \t\tclass=\"active list-group-item playlist-item\">
@@ -232,13 +229,10 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
 \t\t      \t\timg_url=\"http://lorempixel.com/150/150/abstract/7\">
 \t\t  \t\t\t<img src='{{\"assets/images/n.png\"|theme}}'>arración corporativa, micros y videos institucionales
 \t\t  \t\t</li>
-
 \t\t    </ul>
-\t\t  </div>
-\t\t  <audio id=\"audio-player\" class=\"d-none\" src=\"\" type=\"audio/mp3\" controls=\"controls\"></audio>
-\t\t</section>
+
 \t</div>
-\t<div class=\"d-inline demo float-right col-md-6\"></div>
+\t<div class=\"d-inline demo float-right col-md-5\"></div>
 </div>", "/home/mime/web/octosite/themes/leo-theme/pages/demos.htm", "");
     }
 }

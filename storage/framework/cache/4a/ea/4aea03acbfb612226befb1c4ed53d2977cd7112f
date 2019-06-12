@@ -1,4 +1,4 @@
-1560292866a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1882:"description = "Leonardo Rodriguez"
+1560374252a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1930:"description = "Leonardo Rodriguez"
 ==
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@
     </head>
     <body class="d-flex flex-column">
         <!-- Header -->
-            <header id="layout-header pb-4">
+            <header id="layout-header" class="container text-center justify-content-center">
                 {% partial 'site/header' %}
             </header>
 
@@ -48,7 +48,7 @@
             'assets/js/app.js'
         ]|theme }}"></script>
     </body>
-</html>";s:5:"mtime";i:1560284027;s:6:"markup";s:1842:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1560373011;s:6:"markup";s:1890:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -72,7 +72,7 @@
     </head>
     <body class="d-flex flex-column">
         <!-- Header -->
-            <header id="layout-header pb-4">
+            <header id="layout-header" class="container text-center justify-content-center">
                 {% partial 'site/header' %}
             </header>
 
