@@ -75,7 +75,7 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
         echo "            </header>
 
             <div id=\"page-content\">
-                <div class=\"container text-center justify-content-center\">
+                <div class=\"container justify-content-center\">
                         <!-- Content -->
                         <section id=\"layout-content\">";
         // line 32
@@ -149,7 +149,7 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
             </header>
 
             <div id=\"page-content\">
-                <div class=\"container text-center justify-content-center\">
+                <div class=\"container justify-content-center\">
                         <!-- Content -->
                         <section id=\"layout-content\">{% page %}</section>
                 </div>

@@ -1,4 +1,4 @@
-1560374252a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1342:"<!-- Image and text -->  
+1560374711a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1342:"<!-- Image and text -->  
 <div class="row justify-content-center">
     <a class="img-fluid d-line pr-4" href="{{ 'home' | page }}">
         <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo">
@@ -29,7 +29,7 @@
     </nav>
 </div>
 <br>
-";s:5:"mtime";i:1560372964;s:6:"markup";s:1341:"<!-- Image and text -->  
+";s:5:"mtime";i:1560374098;s:6:"markup";s:1341:"<!-- Image and text -->  
 <div class="row justify-content-center">
     <a class="img-fluid d-line pr-4" href="{{ 'home' | page }}">
         <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo">
