@@ -48,9 +48,9 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
         // line 7
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 7), "meta_title", [], "any", false, false, false, 7), "html", null, true);
         echo "\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Leonardo Rodriguez\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
+        <meta name=\"generator\" content=\"Domingo Rodriguez con OctoberCMS\">
 
 
         <link href=\"";
@@ -127,9 +127,9 @@ class __TwigTemplate_8207f27794469644c6bcb1c74d536a5203a4db595f6e168e657f74b0739
         <title>{{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Leonardo Rodriguez\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
+        <meta name=\"generator\" content=\"Domingo Rodriguez con OctoberCMS\">
 
 
         <link href=\"{{ [

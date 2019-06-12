@@ -1,4 +1,4 @@
-1560375883a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1342:"<!-- Image and text -->  
+1560379334a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1342:"<!-- Image and text -->  
 <div class="row justify-content-center">
     <a class="img-fluid d-line pr-4" href="{{ 'home' | page }}">
         <img src="{{ 'assets/images/logo.svg'|theme }}" class="menu-logo">

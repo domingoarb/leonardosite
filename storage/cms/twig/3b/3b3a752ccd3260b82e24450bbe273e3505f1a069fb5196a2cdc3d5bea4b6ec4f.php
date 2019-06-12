@@ -51,7 +51,7 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
 \t\t        </div>
 \t\t      </div>
 \t\t      <div class=\"p-0 m-0\" id=\"now-playing\">
-\t\t        <p class=\"font-italic mb-0\">Now Playing: </p>
+\t\t        <p class=\"font-italic mb-0\">Ahora escuchando: </p>
 \t\t        <p class=\"lead\" id=\"title\"></p>
 \t\t      </div>
 \t\t      <div class=\"progress-bar progress col-12 mb-3\">
@@ -181,7 +181,7 @@ class __TwigTemplate_b0d0e373092baea22d2503123de71cb1366b87f09ec5b7f2df75a35ca87
 \t\t        </div>
 \t\t      </div>
 \t\t      <div class=\"p-0 m-0\" id=\"now-playing\">
-\t\t        <p class=\"font-italic mb-0\">Now Playing: </p>
+\t\t        <p class=\"font-italic mb-0\">Ahora escuchando: </p>
 \t\t        <p class=\"lead\" id=\"title\"></p>
 \t\t      </div>
 \t\t      <div class=\"progress-bar progress col-12 mb-3\">

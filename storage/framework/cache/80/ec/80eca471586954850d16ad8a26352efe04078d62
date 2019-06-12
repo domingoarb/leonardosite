@@ -1,4 +1,4 @@
-1560375883a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:743:"<footer id="sticky-footer" class="py-2 bg-dark gris text-center">
+1560379334a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:743:"<footer id="sticky-footer" class="py-2 bg-dark gris text-center">
 	<div class="container text-center d-inline">
       <small> &copy; Derechos reservados Leonardo Rodríguez &trade;{{ "now"|date("Y") }}</small>
     </div>

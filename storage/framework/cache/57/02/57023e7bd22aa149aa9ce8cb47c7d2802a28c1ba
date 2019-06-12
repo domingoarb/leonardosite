@@ -1,4 +1,4 @@
-1560375883a:1:{s:9:"demos.htm";a:9:{s:8:"fileName";s:9:"demos.htm";s:7:"content";s:3045:"title = "Demos"
+1560379388a:1:{s:9:"demos.htm";a:9:{s:8:"fileName";s:9:"demos.htm";s:7:"content";s:3050:"title = "Demos"
 url = "/demos"
 layout = "default"
 is_hidden = 0
@@ -22,7 +22,7 @@ is_hidden = 0
 		        </div>
 		      </div>
 		      <div class="p-0 m-0" id="now-playing">
-		        <p class="font-italic mb-0">Now Playing: </p>
+		        <p class="font-italic mb-0">Ahora escuchando: </p>
 		        <p class="lead" id="title"></p>
 		      </div>
 		      <div class="progress-bar progress col-12 mb-3">
@@ -77,7 +77,7 @@ is_hidden = 0
 </div> 
 
 
-";s:5:"mtime";i:1560369393;s:6:"markup";s:2974:"<h3 class="text-center">DEMOS</h3>
+";s:5:"mtime";i:1560378786;s:6:"markup";s:2979:"<h3 class="text-center">DEMOS</h3>
  <div class="container d-line row">
 	<div class="d-inline float-left col-md-4">
 		<section class="audio-player md-w-50  card border-0">
@@ -96,7 +96,7 @@ is_hidden = 0
 		        </div>
 		      </div>
 		      <div class="p-0 m-0" id="now-playing">
-		        <p class="font-italic mb-0">Now Playing: </p>
+		        <p class="font-italic mb-0">Ahora escuchando: </p>
 		        <p class="lead" id="title"></p>
 		      </div>
 		      <div class="progress-bar progress col-12 mb-3">
