@@ -20,6 +20,23 @@ phpunit.xml
 
 
 # Include only custom made plugins
+!plugins/
+plugins/*
+!plugins/leo-theme/
+plugins/leo-theme/*
+!plugins/leo-theme/leo
+
+!themes/
+themes/*
+!themes/leo-theme/
+!themes/leo-theme/*
+!themes/leo-theme/assets/plugin/bootstrap
+
+!themes/
+themes/*
+!themes/leo-theme-land/
+!themes/leo-theme-land/*
+!themes/leo-theme-land/assets/plugin/bootstrap
 
 
 !.gitkeep
