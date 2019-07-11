@@ -55,7 +55,7 @@ body {
 
 .menu-logo{
   width: 380px;
-  height: 250px;
+  height: 200px;
 } 
 
 .menu_leo{
@@ -80,13 +80,6 @@ body {
   font-size: 1.1em
 }
 
-.portada{
-  width: 100%; 
-  height: 100%;
-  background-image: url('../images/portada.jpg');
-  background-size: 100% 100%;
-}
-
 .demo{
   width: 100%;
   height: 400px;
@@ -97,13 +90,14 @@ body {
 
 .portada-text{
   margin: 10px 0px 30px 0px;  
-  padding-left: 52%;
-  padding-right: 1%;
+  padding-left: 45%;
+  width: 540px;
+  padding-right: 10%;
   display: inline-block;
   font-family: 'Verlag Condensed Book';
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: justify;
-  color: white;
+  color: black;
 }
 
 .btn-contacto{
@@ -164,6 +158,15 @@ body {
   .nav-link{
     font-size: 0.8em
   }
+  .portada-text{
+  margin: 10px 0px 30px 0px;  
+  padding-left: 10px;
+  }
+  .home-banner-img { 
+    width: 250px;
+    height: 200px;
+  }
+ 
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -182,6 +185,10 @@ body {
 
   .nav-link{
     font-size: 0.8em
+  }
+    .home-banner-img { 
+    width: 250px;
+    height: 200px;
   }
 
 }
@@ -227,4 +234,63 @@ body {
  .banner{
   height: 250px;
 }
+}
+
+
+/*---------------------------------
+* 06. Home Banner
+-----------------------------------*/
+.full-screen {
+  min-height: 100vh;
+}
+.home-banner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;  
+}
+.home-content{
+    margin: 180px 0 50px 0;
+    padding: 10%;
+    padding-left: 61%;
+}
+.home-content h4{
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+}
+.home-content p{
+  color: black;
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 991px){
+    .home-content {
+      margin: 90px 0 50px 0;
+    }
+}
+@media (max-width: 767px){
+  .home-content {
+    padding: 20px;
+  }
+  .home-content h4 {
+    font-size: 20px;
+  }
+  .home-content p {
+    font-size: 14px;
+  }
+}
+
+.home-banner-img { 
+  float: left; 
+  padding: 0 0 20px 0;
+  margin: 0 0 10px 0 ;
+  width: 550px;
+  height: 500px;
 }

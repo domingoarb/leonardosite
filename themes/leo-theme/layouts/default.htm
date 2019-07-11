@@ -22,23 +22,14 @@ description = "Leonardo Rodriguez"
         ]|theme }}" rel="stylesheet">
         <link rel="icon" type="image/png" href="{{ 'assets/images/favicon16x16.ico'|theme }}">
     </head>
-    <body class="d-flex flex-column">
-        <!-- Header -->
-            <header id="layout-header" class="container text-center justify-content-center">
-                {% partial 'site/header' %}
-            </header>
-
-            <div id="page-content">
-                <div class="container justify-content-center">
-                        <!-- Content -->
-                        <section id="layout-content">{% page %}</section>
-                </div>
-            </div>
-        <!-- Footer -->
+    <body>
+        <header id="layout-header" class="container text-center justify-content-center">
+            {% partial 'site/header' %}
+        </header>
+        {% page %}
         <footer id="layout-footer">
             {% partial 'site/footer' %}
         </footer>
-
         <!-- Scripts -->
         <script src="{{[
             'assets/vendor/jquery.js',

@@ -1,0 +1,76 @@
+tabs:
+
+    fields:
+
+        title_suffix:
+            label: 'Sufijo para el título de página (nombre del sitio)'
+            default: 'Leonardo VoiceCover'
+            span: auto
+            required: 1
+            tab: 'SEO'
+
+        company:
+            label: 'Nombre formal empresa'
+            span: auto
+            default: 'Leonardo VoiceCover'
+            tab: 'SEO'
+
+        address:
+            label: 'Dirección'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        email:
+            label: 'Correo electrónico de contacto'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        phone:
+            label: 'Teléfono'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        linkedin:
+            label: 'Linkedin'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        facebook:
+            label: 'Facebook'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        instagram:
+            label: 'Instagram'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        twitter:
+            label: 'Twitter'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        youtube:
+            label: 'Youtube'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        soundcloud:
+            label: 'SoundCloud'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'
+
+        whatsapp:
+            label: 'Whatsapp'
+            span: auto
+            required: 1
+            tab: 'Información de Contacto'

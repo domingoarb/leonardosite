@@ -1,0 +1,79 @@
+==
+<!-- Header -->
+<header class="header">
+  <div class="top-bar theme-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8 text-center text-md-left">
+          <div class="mail social-icons-light">
+              <a href="mailto:{{ html_email(this.theme.email) }}">
+                  <span class="icon flaticon-note-1"></span>
+                {{ html_email(this.theme.email) }}
+              </a> | 
+              <a href="tel:{{ this.theme.phone }}">{{ this.theme.phone }}</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-right">
+          <div class="social-icons-light">
+            {% partial 'social' %}
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div><!-- container -->
+  </div>
+  <nav class="navbar header-nav navbar-expand-lg">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" >
+        <img src="{{ 'logo.svg'|media }}" class="client-logo" width="150px">
+      </a>
+      <!-- / -->
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCropar" aria-controls="navbarCropar" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <!-- / -->
+
+      <!-- Top Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCropar">
+        <ul class="navbar-nav align-items-start align-items-lg-center">
+          <li>
+            <a class="nav-link {% if this.page.id == 'home' %}active{% endif %}"    
+                href="{{ 'home'|page }}">Inicio
+            </a>
+          </li>
+          <li>
+            <a class="nav-link {% if this.page.id == 'about' %}active{% endif %}" 
+                href="{{ 'about'|page }}">Biografía
+            </a>
+          </li>
+          <li>
+            <a class="nav-link {% if this.page.id == 'demos' %}active{% endif %}" 
+                href="{{ 'demos'|page }}">Demos
+            </a>
+          </li>
+          <li>
+            <a class="nav-link {% if this.page.id == 'asesoria' %}active{% endif %}" 
+                href="{{ 'asesoria'|page }}">Asesorias
+            </a>
+          </li>          
+          <li>
+            <a class="nav-link {% if this.page.id == 'services' %}active{% endif %}" 
+                href="{{ 'services'|page }}"> Servicios
+            </a>
+          </li>
+          <li>
+            <a class="nav-link {% if this.page.id == 'contact' %}active{% endif %}" 
+                href="{{ 'contact'|page }}" >Contacto
+              </a>
+          </li>
+        </ul>
+      </div>
+      <!-- / -->
+    </div><!-- Container -->
+  </nav> <!-- Navbar -->  
+</header>
+<!-- Header End -->

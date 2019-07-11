@@ -1,0 +1,138 @@
+title = "Contacto"
+url = "/contacto"
+layout = "default"
+is_hidden = 0
+==
+<?php
+function onSubmit(){
+	$rules = [
+        'name' => 'required',
+        'email' => 'required|email',
+        'phone' => 'required',
+        'message' => 'required',
+    ];
+    $msgs = [
+        'name.required' => 'Por favor ingresa tu nombre',
+        'email.required' => 'Por favor ingresa tu correo electrónico.',
+        'email.email' => 'El correo electrónico ingresado no es válido.',
+        'phone.required' => 'Por favor ingresa tu teléfono',
+        'message.required' => 'Cuéntanos en que podemos ayudarte.',
+    ];
+    $validator = Validator::make(Input::all(), $rules, $msgs);
+    if ($validator->fails()) {
+        throw new ValidationException($validator);
+    } else {
+        $this['vars'] = [
+            'name' => input('name'),
+            'email' => input('email'),
+            'phone' => input('phone'),
+            'content_message' => input('message'),
+            'message_timestamp' => date('d/m/Y \a \l\a\s H:i:s')
+        ];
+        Mail::send('wiz.bizancia::mail.contactform', $this['vars'], function($message) {
+            $message->to($this->theme->email);
+        });
+        return [
+            '#contact-form' => $this->renderPartial('message_success')
+        ];
+    }
+}
+?>
+==
+{% partial 'breadcrumb' %}
+
+
+ <section class="section">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6 m-15px-tb">
+        <!-- Contact Form -->
+          <div class="contact-form box-shadow">
+            <h2 class="font-alt m-0px m-20px-b">Déjanos tu mensaje</h2>
+        	{{ form_ajax('onSubmit', {
+			        'validate': {},
+			        'id': 'contact-form',
+			        'accept-charset': 'utf-8',
+			    })
+			}}
+		        <div class="alert alert-danger" data-validate-error>
+		            <p><b>Hay un error en el formulario</b></p>
+		            <p>Por favor, revisa la información proporcionada y vuelve a intentarlo.</b></p>
+		        </div>
+            <form>
+            	<div class="form-group">
+                	<input name="name" placeholder="Nombre" class="form-control" type="text">
+              	</div>
+              	<div class="form-group">
+                	<input name="email" placeholder="Correo" class="form-control" type="email">
+              	</div>
+    	        <div class="form-group">
+                	<input name="phone" placeholder="Teléfono" class="form-control" type="text">
+              	</div>
+              	<div class="form-group">
+                	<textarea name="message" placeholder="Mensaje" rows="3" class="form-control"></textarea>
+              	</div>
+              	<div class="m-btn-bar">
+              		 <button type="submit" class="m-btn btn-block m-btn-theme">Enviar</button>
+	            </div>
+            </form>
+			{{ form_close() }}			
+          </div>
+        <!-- / -->
+      </div><!-- col -->
+      <div class="col-md-6 m-15px-tb">
+        <div class="contact-map box-shadow">
+          <div class="embed-responsive embed-responsive-16by9 h-100">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3151.840107317064!2d144.955925!3d-37.817214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1520156366883" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div><!-- row -->
+  </div><!-- container-->
+</section>
+
+
+<!----------------------------- Cards tipo de contactos ------------------------------------>
+<section class="section gray-bg">
+  <div class="container">
+    <!-- contact-info-box -->
+    <div class="contact-info-box">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 m-15px-tb">
+          <div class="contact-info box-shadow">
+            <i class="theme-color ti-location-pin"></i>
+            <h6>Dirección</h6>
+            <p>{{ this.theme.address }}</p>
+          </div>
+        </div><!-- col -->
+        <div class="col-md-6 col-lg-3 m-15px-tb">
+          <div class="contact-info box-shadow">
+            <i class="theme-color ti-mobile"></i>
+            <h6>Comunícate!</h6>
+            <p>{{ this.theme.phone }} <br><br></p>
+          </div>
+        </div><!-- col -->
+        <div class="col-md-6 col-lg-3 m-15px-tb">
+          <div class="contact-info box-shadow">
+            <i class="theme-color ti-email"></i>
+            <h6>Email</h6>
+            <p>{{ this.theme.email }}<br><br></p>
+          </div>
+        </div><!-- col -->
+        <div class="col-md-6 col-lg-3 m-15px-tb">
+          <div class="contact-info box-shadow">
+            <i class="theme-color ti-time"></i>
+            <h6>Horario</h6>
+            <p>Lunes a Sabado - 9 AM to 5 PM<br> Domingo 8 AM to 12 PM.</p>
+          </div>
+        </div><!-- col -->
+      </div><!-- row -->
+    </div>
+    <!-- / -->
+  </div>  
+</section>
+
+{% put scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
+<script src="{{ 'assets/js/map-script.js'|theme }}"></script>
+{% endput %}

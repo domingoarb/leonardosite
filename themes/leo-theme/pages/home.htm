@@ -18,10 +18,14 @@ meta_description = "Locutor profesional, voice over talent on line. Locucion, na
       locución de centrales telefónicas, locución de centralitas\""
 is_hidden = 0
 ==
-<div class="container">
-	<div class="portada">
-		<div class="portada-text">
-			{% content "mensaje_bienvenida.htm" %}
-		</div>
-	</div>
+
+<div class="home-banner ">
+      <div class="row full-screen">
+            <div class="col-md-3">
+                  <img src="{{ 'home/bg-1.jpg'|media }}" class="home-banner-img">           
+            </div>
+            <div class="col-md-6 offset-md-2 col-sm-order-first">
+                  <p>{% content "mensaje_bienvenida.htm" %}</p>            
+            </div>
+      </div>
 </div>

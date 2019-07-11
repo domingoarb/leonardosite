@@ -1,0 +1,66 @@
+==
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>{{ this.theme.title_suffix }} &#124;  {{ this.page.meta_title ? this.page.meta_title : this.page.title }} </title>
+  {% if this.page.meta_description or this.page.description %}    
+  <meta name="description" content="{{ this.page.meta_description ? this.page.meta_description : this.page.description }}">
+  {% endif %}
+  {% if this.page.meta_title %}
+  <meta name="title" content="{{ this.page.meta_title }}">
+  {% endif %}
+  <meta name="author" content="{{ this.theme.author }}">
+  {% placeholder meta %}
+    <link href="{{ [
+        'assets/plugin/font-awesome/css/fontawesome-all.min.css',
+        'assets/plugin/themify-icons/themify-icons.css',
+		    'assets/plugin/bootstrap/css/bootstrap.min.css',
+        'assets/plugin/owl-carousel/css/owl.carousel.min.css',
+		    'assets/css/styles.css',
+        'assets/css/theme.css',
+        ]|theme }}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- Loading -->
+  <div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+  </div>
+  <!-- / -->
+
+    <!--Main Navigation-->
+    <header>
+        {% partial 'menu' %}
+        <!--/.Navbar-->
+    </header>
+
+    <!--Main layout-->
+    <main>
+	   	{% page %}
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+	{% partial 'footer' %}
+    <!-- Footer -->
+
+</body>
+
+      <!-- Scripts -->
+    <script src="{{[
+        'assets/js/jquery-3.2.1.min.js',
+        'assets/js/jquery-migrate-3.0.0.min.js',
+
+        'assets/plugin/bootstrap/js/popper.min.js',
+        'assets/plugin/bootstrap/js/bootstrap.min.js',
+        'assets/plugin/owl-carousel/js/owl.carousel.min.js',
+
+        'assets/js/custom.js',
+]|theme }}"></script>
+  {% framework extras %}
+  {% scripts %}
+</body>
+
+</html>
