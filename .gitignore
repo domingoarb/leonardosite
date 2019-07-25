@@ -9,6 +9,7 @@ storage/app/*
 !storage/app/media
 !storage/app/media/*
 vendor/
+.history
 .well-known/
 .htaccess
 .env
@@ -16,18 +17,18 @@ artisan
 index.php
 server.php
 .travis.yml
-phpunit.xml
+phpunit.xml 
 
 
 # Include only custom made plugins
-plugins/*
 !plugins/
+plugins/*
 !plugins/domingoarb/
 plugins/domingoarb/*
-!plugins/domingoarb/leo-site
+!plugins/domingoarb/leosite
 
-themes/
 !themes/
+themes/*
 !themes/leo-theme-land/
 !themes/leo-theme-land/*
 !themes/leo-theme-land/assets/plugin/bootstrap
