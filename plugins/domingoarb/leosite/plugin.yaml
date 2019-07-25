@@ -1,0 +1,6 @@
+plugin:
+    name: 'domingoarb.leosite::lang.plugin.name'
+    description: 'domingoarb.leosite::lang.plugin.description'
+    author: domingoarb
+    icon: oc-icon-briefcase
+    homepage: ''
