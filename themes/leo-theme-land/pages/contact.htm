@@ -29,7 +29,7 @@ function onSubmit(){
             'content_message' => input('message'),
             'message_timestamp' => date('d/m/Y \a \l\a\s H:i:s')
         ];
-        Mail::send('wiz.bizancia::mail.contactform', $this['vars'], function($message) {
+        Mail::send('domingoarb.leosite::mail.contactform', $this['vars'], function($message) {
             $message->to($this->theme->email);
         });
         return [

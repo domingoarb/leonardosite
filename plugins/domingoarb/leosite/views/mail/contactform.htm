@@ -1,0 +1,31 @@
+subject = "Contacto desde la web"
+description = "Mensaje enviado al completar el formulario de contacto en la web"
+==
+
+Un usuario ha completado el formulario de contacto desde la web con la siguiente información:
+
+Nombre: {{ name }}
+
+E-mail: {{ email }}
+
+Teléfono: {{ phone }}
+
+Mensaje:
+{{ content_message|raw }}
+
+---
+Mensaje generado el {{ message_timestamp }}.
+
+==
+<p>Un usuario ha completado el formulario de contacto desde la web con la siguiente información:</p>
+
+<dl>
+    <dt>Nombre:</dt>
+    <dd><b>{{ name }}</b></dd>
+    <dt>E-mail:</dt>
+    <dd><b>{{ email }}</b></dd>
+    <dt>Mensaje:</dt>
+    <dd><b>{{ content_message|raw }}</b></dd>
+</dl>
+
+<p>Mensaje generado el {{ message_timestamp }}.</p>

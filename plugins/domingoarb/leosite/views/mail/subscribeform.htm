@@ -1,0 +1,19 @@
+subject = "Subscripción desde la web"
+description = "Mensaje enviado al completar el formulario para suscribirse en la web"
+==
+
+Un usuario ha completado el formulario de contacto desde la web con la siguiente información:
+
+E-mail: {{ email_subscribe }}
+---
+Mensaje generado el {{ message_timestamp }}.
+
+==
+<p>Un usuario ha completado el formulario para subscribirse desde la web:</p>
+
+<dl>
+    <dt>E-mail:</dt>
+    <dd><b>{{ email_subscribe }}</b></dd>
+</dl>
+
+<p>Mensaje generado el {{ message_timestamp }}.</p>
