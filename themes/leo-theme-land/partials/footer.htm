@@ -5,26 +5,26 @@
         <div class="col-lg-4 m-15px-tb col-md-6">
           <div class="footer-content">
             <div class="footer-logo">
-             <img src="{{ 'logo.svg'|media }}" class="client-logo" width="150px">
+             <img src="{{ 'logo.svg'|media }}" class="cliente-logo">
             </div>
             <div class="footer-text">
-              <p>Lorem ipsum lobors praesent auctor quis euismod torquent perneque modo class malesuada cubilia srisque phretra fring vesbulum phaseus</p>
+              <p>{% content '06-footer-text'%}</p>
             </div>
             <ul class="social-icons">
               {% if this.theme.facebook %}
-                <li><a href="{{ 'this.theme.facebook' }}"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="{{ this.theme.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a></li>
               {% endif %}
               {% if this.theme.twitter %}
-                <li><a href="{{ 'this.theme.twitter' }}"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="{{ this.theme.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
               {% endif %}
               {% if this.theme.linkedin %}
-                <li><a href="{{ 'this.theme.linkedin' }}"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="{{ this.theme.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
               {% endif %}
               {% if this.theme.instagram %}
-                <li><a href="{{ 'this.theme.instagram' }}"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="{{ this.theme.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
               {% endif %}
               {% if this.theme.youtube %}
-                <li><a href="{{ 'this.theme.youtube' }}"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="{{ this.theme.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
               {% endif %}
             </ul>
           </div>
@@ -33,11 +33,10 @@
           <div class="footer-content">
             <div class="footer-title font-alt">Mas información</div>
             <ul>
-              <li><a href="#">Biografía</a></li>
-              <li><a href="#services">Servicios</a></li>
-              <li><a href="#">Asesorias</a></li>
-              <li><a href="#">Demos</a></li>
-              <li><a href="#contact">Contacto</a></li>
+              <li><a href="{{ 'home'|page }}#services">Servicios</a></li>
+              <li><a href="{{ 'asesorias'|page }}">Asesorias</a></li>
+              <li><a href="{{ 'home'|page }}#demos">Demos</a></li>
+              <li><a href="{{ 'contact'|page }}">Contacto</a></li>
             </ul>
           </div>
         </div><!-- col -->
@@ -47,7 +46,7 @@
         <div class="col-lg-4 m-15px-tb col-md-6">
           <div class="footer-newsletter">
             <div class="footer-title font-alt">Suscríbete</div>
-            <p>Recibe información sobre como asesorias, cursos directamente por correo electronico</p>
+            <p>Recibe información sobre futuros eventos, asesorias y cursos directamente por correo electrónico</p>
             <form class="newsletter-form">
               <div class="form-group">
                 <input type="email" class="form-control" placeholder="Email">
