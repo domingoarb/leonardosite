@@ -24,11 +24,10 @@ postPage = "asesorias-post"
         {% for post in posts %}
         <li class="list-group-item border-0">
             <h2><a href="{{ post.url }}" class="theme-color">{{ post.title }}</a></h2>
-            <p class="excerpt">{{ 
-                html_limit(post.summary|raw, 10, '... Leer mas!')
-             
-
-        }}</p>
+            <p class="excerpt">
+                {{ post.summary|raw }}
+                <a href="{{ post.url }}" class="theme-color">leer más</a>
+            </p>
             <p class="info">
                 Publicado el 
                 {% if post.categories.count %} in {% endif %}
@@ -64,3 +63,5 @@ postPage = "asesorias-post"
 
 	</div>
 </div>
+
+</section>
