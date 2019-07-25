@@ -27,10 +27,10 @@ plugins/wiz/*
 !plugins/wiz/bizancia
 
 !themes/
-themes/*
-!themes/bizancia/
-!themes/bizancia/*
-!themes/bizancia/assets/plugin/bootstrap
+themes/
+!themes/leo-theme-land/
+!themes/leo-theme-land/*
+!themes/leo-theme-land/assets/plugin/bootstrap
 
 !.gitkeep
 .DS_Store
