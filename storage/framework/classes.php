@@ -299,4 +299,5 @@
   'RainLab\\Builder\\Classes\\PluginVersion' => 'plugins/rainlab/builder/classes/PluginVersion.php',
   'RainLab\\Builder\\Classes\\LocalizationModel' => 'plugins/rainlab/builder/classes/LocalizationModel.php',
   'RainLab\\Builder\\Classes\\ControllerModel' => 'plugins/rainlab/builder/classes/ControllerModel.php',
+  'dmitrybykov\\htmlminify\\Plugin' => 'plugins/dmitrybykov/htmlminify/Plugin.php',
 );

@@ -8,6 +8,34 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 ==
+<?php
+
+function onSubscribe() {
+    $rules = [
+        'email_subscribe' => 'required|email',
+    ];
+    $msgs = [
+        'email_subscribe.required' => 'Por favor ingresa tu correo electrónico.',
+        'email_subscribe.email' => 'El correo electrónico ingresado no es válido.',
+    ];
+    $validator = Validator::make(Input::all(), $rules, $msgs);
+    if ($validator->fails()) {
+        throw new ValidationException($validator);
+    } else {
+        $this['vars'] = [
+            'email_subscribe' => input('email_subscribe'),
+        ];
+        Mail::send('domingoarb.leosite::mail.subscribeform', $this['vars'], function($message) {
+            $message->to($this->theme->email);
+        });
+        return [
+            '#subscribe-form' => $this->renderPartial('message_success')
+        ];
+    }
+}
+
+?>
+==
 <!--------------------------- Home Banner ------------------------------------>
 <section class="home-banner pb-3" 
   style="background-image: url({{ 'home/main.jpg'|media|resize(1200,720,({mode:'landscape'})) }}); background-size:100% 100%;">
