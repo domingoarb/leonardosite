@@ -29,7 +29,7 @@ function onEnd()
   <div class="container">
     <div class="row">
     {% set post = blogPost.post %}
-    	<h2>{{ post.title|raw }}</h2>
+    	<h2 class="theme-color">{{ post.title|raw }}</h2><br>
 		<div class="content">{{ post.content_html|raw }}</div>
 		{% if post.featured_images.count %}
 		    <div class="featured-images text-center">
