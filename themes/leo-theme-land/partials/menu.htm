@@ -25,7 +25,7 @@
     <div class="container">
       <!-- Brand -->
       <a class="navbar-brand" href="#" >
-        <img src="{{ 'logo.svg'|media }}" class="client-logo" width="150px">
+        <img src="{{ 'logo.svg'|media }}" class="cliente-logo">
       </a>
       <!-- / -->
 
@@ -41,32 +41,28 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarCropar">
         <ul class="navbar-nav align-items-start align-items-lg-center">
           <li>
-            <a class="nav-link {% if this.page.id == 'home' %}active{% endif %}"    
+            <a class="nav-link"    
                 href="{{ 'home'|page }}">Inicio
             </a>
           </li>
           <li>
-            <a class="nav-link {% if this.page.id == 'about' %}active{% endif %}" 
-                href="{{ 'about'|page }}">Biografía
-            </a>
-          </li>
-          <li>
-            <a class="nav-link {% if this.page.id == 'demos' %}active{% endif %}" 
-                href="{{ 'demos'|page }}">Demos
-            </a>
-          </li>
-          <li>
-            <a class="nav-link {% if this.page.id == 'asesoria' %}active{% endif %}" 
-                href="{{ 'asesoria'|page }}">Asesorias
+            <a class="nav-link " 
+                href="{{ 'home'|page }}#services"> Servicios
             </a>
           </li>          
           <li>
-            <a class="nav-link {% if this.page.id == 'services' %}active{% endif %}" 
-                href="{{ 'services'|page }}"> Servicios
+            <a class="nav-link" 
+                href="{{ 'home'|page }}#demos">Demos
             </a>
           </li>
           <li>
-            <a class="nav-link {% if this.page.id == 'contact' %}active{% endif %}" 
+            <a class="nav-link" 
+                href="{{ 'asesorias'|page }}">Asesorias
+            </a>
+          </li>          
+
+          <li>
+            <a class="nav-link" 
                 href="{{ 'contact'|page }}" >Contacto
               </a>
           </li>

@@ -20,7 +20,17 @@ phpunit.xml
 
 
 # Include only custom made plugins
+!plugins/
+plugins/*
+!plugins/wiz/
+plugins/wiz/*
+!plugins/wiz/bizancia
 
+!themes/
+themes/*
+!themes/leo-theme-land/
+!themes/leo-theme-land/*
+!themes/leo-theme-land/assets/plugin/bootstrap
 
 !.gitkeep
 .DS_Store
