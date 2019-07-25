@@ -26,8 +26,8 @@ plugins/*
 plugins/wiz/*
 !plugins/wiz/bizancia
 
-!themes/
 themes/
+!themes/
 !themes/leo-theme-land/
 !themes/leo-theme-land/*
 !themes/leo-theme-land/assets/plugin/bootstrap
