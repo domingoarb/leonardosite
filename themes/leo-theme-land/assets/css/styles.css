@@ -32,14 +32,7 @@ Table of contents
   background-size:cover;
   position: relative;
     z-index: 1;
-    opacity: .80;
-}
-
-.banner-home {
-  background-size:cover;
-  position: relative;
-    z-index: 1;
-    opacity: .85;
+    opacity: .75;
     border-radius: 10px;    
 }
 
@@ -56,13 +49,10 @@ Table of contents
     background-size:cover;
 }
 
-@font-face {
-  font-family: 'apexnewbookwebfont';
-  src: url('../fonts/apexnewbookwebfont.eot');
-  src: local('apexnewbookwebfont'), 
-    url('../fonts/apexnewbookwebfont.woff') format('woff'), 
-    url('../fonts/apexnewbookwebfont.ttf') format('truetype');
+.img-full{
+  background-size:100% 100%;
 }
+
 
 @font-face {
   font-family: "Verlag Book";
@@ -454,6 +444,7 @@ a:active {
 .home-content{
     margin: 180px 0 50px 0;
     padding: 10%;
+
 }
 .home-content h4{
   font-weight: 600;
