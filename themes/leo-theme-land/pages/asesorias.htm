@@ -25,7 +25,7 @@ postPage = "asesorias-post"
         <li class="list-group-item border-0">
             <h2><a href="{{ post.url }}" class="theme-color">{{ post.title }}</a></h2>
             <p class="excerpt">{{ 
-                html_limit(post.summary|raw, 10, <a href="{{ post.url }}" class="theme-color">... Read more!</a>)
+                html_limit(post.summary|raw, 10, '... Leer mas!')
              
 
         }}</p>
