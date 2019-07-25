@@ -20,6 +20,11 @@ phpunit.xml
 
 
 # Include only custom made plugins
+plugins/*
+!plugins/
+!plugins/domingoarb/
+plugins/domingoarb/*
+!plugins/domingoarb/leo-site
 
 themes/
 !themes/
