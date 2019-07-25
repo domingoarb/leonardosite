@@ -32,21 +32,8 @@ Table of contents
   background-size:cover;
   position: relative;
     z-index: 1;
-    opacity: .75;
+    opacity: .85;
     border-radius: 10px;    
-}
-
-.banner-home:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-
-    right: 0;
-    object-fit: contain;
-    background-size:cover;
 }
 
 .img-full{
